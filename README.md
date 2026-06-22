@@ -16,6 +16,8 @@
 
 ## Setup
 
+### Option A: Using the terminal (CLI)
+
 1. Clone the repo
 
 ```bash
@@ -26,7 +28,21 @@ git clone https://github.com/[your-org]/[your-repo].git
 
 3. That's it — agents and skills load automatically from `.claude/`
 
-> **Note:** The `.claude/` folder is hidden by default. On Mac press `Cmd + Shift + .` to show hidden files.
+### Option B: Using GitHub Desktop
+
+1. Open [GitHub Desktop](https://desktop.github.com/)
+2. Click **File → Clone Repository**
+3. Go to the **URL** tab and paste the repo URL:
+   - On the GitHub repo page, click the green **\< \> Code** button
+   - Make sure **HTTPS** is selected
+   - Click the copy icon next to the URL
+   - Paste it into GitHub Desktop
+4. Choose a local path and click **Clone**
+5. Once cloned, open the folder in Claude Code:
+   - In GitHub Desktop, click **Repository → Open in…** and select your Claude Code editor, or
+   - Open Claude Code manually and use **File → Open Folder** to navigate to the cloned folder
+
+> **Note:** The `.claude/` folder is hidden by default. On Mac press `Cmd + Shift + .` to show hidden files in Finder.
 
 ---
 
