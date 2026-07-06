@@ -1,5 +1,7 @@
 # [Your Team Name] Claude Agents
 
+**Version:** 1.0.0 — see [CHANGELOG.md](CHANGELOG.md)
+
 [One paragraph describing what this repo does and who it's for.]
 
 ---
