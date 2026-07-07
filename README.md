@@ -15,6 +15,7 @@ Must Have:
 - [Python](https://www.python.org/downloads/)
 - [Node](https://nodejs.org/en/download)
 - Claude Pro or Max account
+
 - Optional:
 
 - [GitHub Desktop](https://desktop.github.com/download/)
