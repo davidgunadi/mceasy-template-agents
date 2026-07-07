@@ -8,19 +8,17 @@
 
 ## Prerequisites
 
-- Claude Code enabled (comes with Claude Pro or Max)
-- One of the following:
-  - [Claude Desktop](https://claude.ai/download) with Claude Code, or
-  - [VS Code](https://code.visualstudio.com/) with the [Claude Code extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
-- This repo cloned to your machine
+Must Have:
+
+- [Claude Desktop](https://claude.com/download)
 - [Git](https://git-scm.com/install/)
 - [Python](https://www.python.org/downloads/)
 - [Node](https://nodejs.org/en/download)
-
-Optional:
+- Claude Pro or Max account
+- Optional:
 
 - [GitHub Desktop](https://desktop.github.com/download/)
-- [VS Code](https://code.visualstudio.com/download)
+- [VSCode](https://code.visualstudio.com/download)
 
 ---
 
@@ -34,9 +32,9 @@ Optional:
 git clone https://github.com/[your-org]/[your-repo].git
 ```
 
-2. Open the folder in Claude Code
+1. Open the folder in Claude Code
 
-3. That's it — agents and skills load automatically from `.claude/`
+2. That's it — agents and skills load automatically from `.claude/`
 
 ### Option B: Using GitHub Desktop
 
@@ -94,20 +92,22 @@ Each file in `.claude/agents/` defines one agent. The frontmatter controls how C
 
 ```markdown
 ---
-name: agent-name            # How you invoke it: @agent-name
-description: ...            # Claude reads this to decide when to use it
-model: sonnet               # sonnet (fast/cheap) or opus (deep research)
-tools: Read, Write          # What tools the agent can use
+name: agent-name # How you invoke it: @agent-name
+description: ... # Claude reads this to decide when to use it
+model: sonnet # sonnet (fast/cheap) or opus (deep research)
+tools: Read, Write # What tools the agent can use
 ---
 
 [System prompt — the agent's instructions]
 ```
 
 **Model guidance:**
+
 - Use `opus` for research agents that need deep reasoning and web search
 - Use `sonnet` for writing, reviewing, and formatting agents
 
 **Tools you can grant:**
+
 - `Read`, `Write`, `Edit` — file access
 - `WebSearch`, `WebFetch` — internet access
 - `Bash` — shell commands (use carefully)
@@ -129,6 +129,7 @@ The `SKILL.md` file is a prompt that tells Claude how to orchestrate the pipelin
 ## How CLAUDE.md works
 
 `CLAUDE.md` in the repo root is always loaded as project context. Use it to:
+
 - Define the pipeline order and rules
 - Give agents shared background knowledge about your domain, product, or team
 - Set hard rules (e.g. "always save to `./outputs/`", "write in English only")
