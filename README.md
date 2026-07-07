@@ -1,6 +1,6 @@
 # [Your Team Name] Claude Agents
 
-**Version:** 1.0.0 — see [CHANGELOG.md](CHANGELOG.md)
+**Version:** 1.1.0 — see [CHANGELOG.md](CHANGELOG.md)
 
 [One paragraph describing what this repo does and who it's for.]
 
@@ -77,6 +77,8 @@ your-repo/
 ├── .gitignore
 ├── outputs/                           # All generated files go here
 │   └── .gitkeep
+├── scripts/                           # Scripts invoked by agents while running
+│   └── .gitkeep
 └── .claude/
     ├── settings.json                  # Permissions (e.g. allow WebSearch)
     ├── agents/                        # One .md file per agent
@@ -131,7 +133,7 @@ The `SKILL.md` file is a prompt that tells Claude how to orchestrate the pipelin
 `CLAUDE.md` in the repo root is always loaded as project context. Use it to:
 - Define the pipeline order and rules
 - Give agents shared background knowledge about your domain, product, or team
-- Set hard rules (e.g. "always save to `./outputs/`", "write in English only")
+- Set hard rules (e.g. "always save to `./outputs/`", "scripts go in `./scripts/`", "write in English only")
 
 Agents read `CLAUDE.md` automatically — you don't need to repeat context in every agent file.
 

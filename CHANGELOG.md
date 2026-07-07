@@ -7,6 +7,12 @@ and versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-07-07
+
+### Added
+
+- `./scripts/` folder convention: any script invoked by an agent while running must live there, not in the repo root. Referenced in `CLAUDE.md` rules and `README.md`'s folder structure.
+
 ## [1.0.0] - 2026-07-06
 
 ### Added
