@@ -13,6 +13,14 @@
   - [Claude Desktop](https://claude.ai/download) with Claude Code, or
   - [VS Code](https://code.visualstudio.com/) with the [Claude Code extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
 - This repo cloned to your machine
+- [Git](https://git-scm.com/install/)
+- [Python](https://www.python.org/downloads/)
+- [Node](https://nodejs.org/en/download)
+
+Optional:
+
+- [GitHub Desktop](https://desktop.github.com/download/)
+- [VS Code](https://code.visualstudio.com/download)
 
 ---
 
