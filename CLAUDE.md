@@ -53,6 +53,7 @@ Output file saved to ./outputs/
 ## Rules
 
 - All output files must be saved to `./outputs/` — never write to the repo root
+- Any script invoked by an agent while running must live in `./scripts/` — never write scripts to the repo root
 - [Add your own rules here]
 
 ---
